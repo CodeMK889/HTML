@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Prompt the user for a 4-digit number
+const inputNumber = prompt("Enter a 4-digit number:");
+
+// Check if the input is a valid 4-digit number
+if (inputNumber.length !== 4 || isNaN(inputNumber)) {
+    alert("Please enter a valid 4-digit number.");
+} else {
+    // Convert the input to a number
+    const number = parseInt(inputNumber);
+
+    // Calculate the sum of cubes of individual digits
+    const digit1 = Math.floor(number / 1000);
+    const digit2 = Math.floor((number % 1000) / 100);
+    const digit3 = Math.floor((number % 100) / 10);
+    const digit4 = number % 10;
+
+    const sumOfCubes = Math.pow(digit1, 3) + Math.pow(digit2, 3) + Math.pow(digit3, 3) + Math.pow(digit4, 3);
+
+    // Check if it's an Armstrong number
+    if (sumOfCubes === number) {
+        alert(`${number} is an Armstrong number.`);
+    } else {
+        alert(`${number} is not an Armstrong number.`);
+    }
+}
+
+    </script>
+    
+</body>
+</html>
+
+
+
+

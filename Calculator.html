@@ -1,0 +1,69 @@
+<html>
+<head>
+<style type='text/css'>
+<table>
+{
+border-color:green;
+backgroun-color:lightgreen}
+input 
+{
+width:'50px';
+height:'50px';
+color:darkgreen;
+font-size:25px;
+padding:10px;
+}
+
+#screen
+{width:220px;
+height:50px;
+}
+</style>
+</head>
+<body>
+<center>
+<form name='calc'>
+<table border='4' cellpadding='8>
+<tr>
+<td>
+<font size='9'>
+<INPUT type='text' id='screen' name='input' size='16'>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<INPUT type='button' name='one' value='1' onclick='calc.input.value+='1'>
+<INPUT type= 'button' name='two' Value='2' onclick= 'calc.input.value+='2'>
+<INPUT type= 'button' name='three' Value='3' onclick= 'calc.input.value+='3'>
+
+<INPUT type= 'button' name='div' Value='/' onclick= 'calc.input.value+='/'>
+<br>
+<INPUT type='button' name='Four' value='4' onclick='calc.input.value+='4'>
+<INPUT type= 'button' name='Five' Value='5' onclick= 'calc.input.value+'5'>
+<INPUT type= 'button' name='Six' Value='6' onclick= 'calc.input.value+'6'>
+<INPUT type='button' name='Mul' value='X' onclick='calc.input.value+='*'>
+<br>
+<INPUT type= 'button' name='Seven' Value='7' onclick= 'calc.input.value+'7'>
+<INPUT type= 'button' name='Eight' Value='8' onclick= 'calc.input.value+'8'>
+<INPUT type= 'button' name='Nine' Value='9' onclick= 'calc.input.value+'9'>
+<INPUT type = 'button' name='Sub' Value='0' onclick='calc.input.value+='-'>
+<br>
+<INPUT type = 'button' name='zero' Value='0' onclick='calc.input.value+='0'>
+<INPUT type = 'Reset' name='clear' Value='C' onclick='calc.input.value+=''>
+<INPUT type = 'button' name='dolt' Value='=' onclick='calc.input.value=eval(calc.input.value)'>
+<INPUT type = 'button' name='add' Value='+' onclick='calc.input.value+='+'>
+
+<br>
+
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
