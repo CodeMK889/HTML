@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var stringVal = 'Sachin';
+        localStorage.setITem('name',stringVal);
+        console.log(localStorage.getItem('name'));
+        console.log(typeof localStorage.getItem('name'));
+
+        var stringVal = 1234566;
+        localStorage.setITem('num',stringVal);
+        console.log(localStorage.getItem('num'));
+        console.log(typeof localStorage.getItem('num'));
+
+        var bool= true;
+        localStorage.setItem('bool', bool);
+        console.log(typeof localStorage.getItem('bool'));
+
+        const studentObj = {
+            name : 'Sachin',
+            age : 12
+        }
+
+        console.log(studentObj);
+        localStorage.setItem('studentObj', studentObj);
+        console.log(localStorage.getItem('studentObj'));
+        // console.log('[object Object]');
+
+        //convert object into string
+        var obj =  JSON.stringify(studentObj);
+        localStorage.setItem('studentObj1', obj);
+        console.log(localStorage.getItem('studentObj1'));       
+        console.log(localStorage.getItem('studentObj1').name);       
+
+    </Script>    
+</body>
+</html>

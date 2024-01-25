@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mouseoverFunction(event)" onmouseout="onMouseOut(event)">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium adipisci ullam harum explicabo earum totam ea amet vitae expedita quibusdam rem eligendi dignissimos, tempore modi hic suscipit, corrupti architecto! Blanditiis.
+    </div>
+    <script>
+        function mouseoverFunction(e1){
+            console.log(e1.target);
+            e1.target.style.color = 'yellow';
+        }
+        function onMouseOut(e1){
+            console.log(e1.target);
+            e1.target.style.color = 'red';
+        }
+    </script>
+</body>
+</html>

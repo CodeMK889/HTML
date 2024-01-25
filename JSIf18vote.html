@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Or Not</title>
+</head>
+<body>
+    <script>
+
+        let age=parseInt(prompt("Enter your age : "));
+        let Nationality=prompt("Enter your Nationality : ");
+
+            function checkeligible(age,Nationality){
+            if(age>=18 && Nationality=="Indian"){
+                document.write("You are eligible for vote");
+            }
+            else{
+                document.write("You are not eligible for vote")
+            }
+        }
+
+        checkeligible(age,Nationality);
+
+        
+
+    </script>
+
+</body>
+</html>
