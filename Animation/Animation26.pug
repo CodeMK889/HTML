@@ -1,0 +1,89 @@
+<!-- As we’ve seen, just a touch of CSS animation can go a very long way in crafting a 
+    
+    more immersive experience for your visitors. The best animations serve your content 
+    and experience without distracting or appearing gimmicky — all of the above examples
+     all strike this balance remarkably well.
+
+However, we couldn’t resist adding one last example that blew us away. This “Watch Tower” 
+example is probably beyond the scope of this piece in its complexity, but it’s also a
+ testament to what CSS and HTML alone can accomplish. -->
+
+
+ .container
+ .birds.front
+   - for(var x = 1; x <= 12; x++)
+     div(class="bird b" + x)
+       .body
+       .wing1
+         .wing2
+           .wing3
+ .birds.back
+   - for(var x = 1; x <= 12; x++)
+     div(class="bird b" + x)
+       .body
+       .wing1
+         .wing2
+           .wing3
+ .cloud.big
+   - for(var x = 0; x <= 8; x++)
+     div(class="circle c" + x)
+ .cloud.small
+   - for(var x = 0; x <= 8; x++)
+     div(class="circle c" + x)
+ .mountain
+   .backdrop
+   - for(var x = 0; x <= 4; x++)
+     div(class="zig zag" + x)
+     .top
+     .mid
+     .bot
+     .base
+ .range
+   - for(var x = 1; x <= 7; x++)
+     div(class="r" + x)
+ - for(var x = 1; x <= 8; x++)
+   div(class="tree treeBack tree" + x)
+     .top
+     .mid
+     .bot
+     .base
+ .tower
+   .shadow
+   .flagPole
+   .roof1
+   .roof2
+   .wall
+     - for(var x = 1; x <= 5; x++)
+       div(class="w" + x)
+   .legs
+     .left
+     .right
+     .support1
+       .criss
+       .cross
+       .flat
+     .support2
+       .criss
+       .cross
+       .flat
+   .railing
+     .top
+     .bot1
+     .bot2
+     - for(var x = 1; x <= 9; x++)
+       div(class="r" + x)
+ - for(var x = 1; x <= 5; x++)
+   div(class="tree treeMid tree" + x)
+     .top
+     .mid
+     .bot
+     .base
+ - for(var x = 1; x <= 4; x++)
+   div(class="tree treeFront tree" + x)
+     .top
+     .mid
+     .bot
+     .base
+ 
+ </body>
+ </html>
